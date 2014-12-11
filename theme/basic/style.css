@@ -1,0 +1,128 @@
+/* 
+    Created on : 27.08.2014, 09:41:17
+    Author     : corefault
+    inspired by http://www.colourlovers.com/palette/72/OrtNeuIm2Prop
+*/
+* {
+   /*font-family: 'Open Sans', sans-serif;*/
+   font-family: 'Karla', sans-serif;
+   margin:0;
+   padding:0;
+}
+
+:focus {
+   outline:0;
+}
+
+body {
+   margin-top:40px;
+   font-size:13px;
+   line-height:22px;
+}
+
+.fluid {
+   width:500px;
+   margin:0 auto;
+}
+
+header {
+   display:block;
+   padding-bottom:30px;
+   font-size:12px;
+   color:#767F88;
+   font-size:12px;
+}
+
+header img {
+   display:block;
+}
+
+article {
+   clear:both;
+   display:block;
+   padding-top:5px;
+   padding-bottom:5px;
+   margin:0;
+   border-bottom: 1px solid #ddd;
+}
+
+article:nth-child(2n) {
+ background-color: #e8e8e8;
+}
+
+article p {
+   padding-bottom:10px;
+}
+
+a {
+   color:#DD0000;
+   text-decoration:none;
+}
+
+a:hover {
+   border-bottom:1px solid #DD0000;
+}
+
+article img {
+   border:0;
+   width:500px;
+}
+
+article .permalink {
+   display:block;
+   text-align:right;
+}
+
+/* markdown */
+h1 {
+   font-size:18px;
+   letter-spacing:-1px;
+   font-weight:normal;
+   text-transform: lowercase;
+   color:#767F88;
+}
+
+
+#meta {
+   position:fixed;
+   top:0;
+   right:0;
+   width:520px;
+   background-color:#F8F8F8;
+   color:#303438;
+   border-left:2px solid #767F88;
+   min-height:100%;
+}
+
+#meta input, #meta textarea {
+   display:block;
+   font-family:Tahoma;
+   font-size:13px;
+   padding:5px;
+}
+
+#meta form {
+   margin:10px;
+}
+
+#meta input[type=submit] {
+  margin-top:10px;
+  border:0;
+  background-color:#303438;
+  color:#F8F8F8;
+  padding:4px;
+  text-transform: uppercase;
+  cursor:pointer;
+}
+
+#meta textarea {
+   width:100%;
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+}
+
+#meta article {
+   margin-left:10px;
+   margin-right:10px;
+}
