@@ -76,4 +76,26 @@ class posts {
    }
 }
 
+function showPost() {
+   $p = new posts();
+   if ($_SESSION["id"][0] == "!") {
+      echo $p->getPost(substr($_SESSION["id"],1) . ".md");
+   } else {
+      echo $p->getAtIndex($_SESSION["id"]);
+   }
+}
+
+function showPermalink() {
+   $p = new posts();
+   echo "/" . $p->getPermaLink($_SESSION["id"]) . "/";
+}
+
+function showTweet($hashtag, $url) {
+   $p = new posts();
+   if (substr($url, -1) != "/") {
+      $url .= "/";
+   }
+   echo "https://twitter.com/intent/tweet?hashtags=$hashtag&text=$url" . $p->getPermaLink($_SESSION["id"]) . "/";
+}
+
 ?>
