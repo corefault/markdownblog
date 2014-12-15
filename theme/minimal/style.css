@@ -1,0 +1,128 @@
+/* 
+    Created on : 27.08.2014, 09:41:17
+    Author     : corefault
+    inspired by http://www.colourlovers.com/palette/3587997/Blanket2
+*/
+* {
+   font-family: 'Raleway', sans-serif;
+   margin:0;
+   padding:0;
+}
+
+:focus {
+   outline:0;
+}
+
+body {
+   margin-top:40px;
+   font-size:15px;
+   line-height:20px;
+}
+
+header {
+   text-align:center;
+   background-color:#fff;
+   display:block;
+   padding-bottom:30px;
+}
+
+header h1 {
+    font-size:24px;
+    font-weight:normal;
+    letter-spacing:-1px;
+    color:#B9350F;
+}
+header em {
+    font-size:13px;
+    color:#66A091;
+}
+
+
+#layout {
+    width:600px;
+    margin:0 auto;
+}
+
+#layout .menu {
+    float:left;
+    width:100px;
+    font-size:12px;
+    line-height:14px;
+}
+
+#layout .content {
+   width:500px;
+   float:left;
+}
+#layout .content img {
+    width:500px;
+}
+
+#layout .content p {
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+#layout .menu a {
+   color:#920E1B;
+   font-size:11px;
+   text-decoration:none;
+   text-transform: uppercase;
+}
+#layout .content a {
+   color:#920E1B;
+   text-decoration:none;
+}
+
+/* markdown */
+h1 {
+   font-size:18px;
+   letter-spacing:-1px;
+   font-weight:normal;
+   text-transform: lowercase;
+   color:#767F88;
+}
+
+
+#meta {
+   position:fixed;
+   top:0;
+   right:0;
+   width:520px;
+   background-color:#F8F8F8;
+   color:#303438;
+   border-left:2px solid #767F88;
+   min-height:100%;
+}
+
+#meta input, #meta textarea {
+   display:block;
+   font-family:Tahoma;
+   font-size:13px;
+   padding:5px;
+}
+
+#meta form {
+   margin:10px;
+}
+
+#meta input[type=submit] {
+  margin-top:10px;
+  border:0;
+  background-color:#303438;
+  color:#F8F8F8;
+  padding:4px;
+  text-transform: uppercase;
+  cursor:pointer;
+}
+
+#meta textarea {
+   width:100%;
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+}
+
+#meta article {
+   margin-left:10px;
+   margin-right:10px;
+}

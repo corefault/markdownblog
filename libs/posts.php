@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * class for blog posts
+ */
 class posts {
 
    var $list = array();
@@ -76,6 +79,9 @@ class posts {
    }
 }
 
+/**
+ * get current post data depending on mode (infinite or permalink)
+ */
 function showPost() {
    $p = new posts();
    if ($_SESSION["id"][0] == "!") {
@@ -85,11 +91,20 @@ function showPost() {
    }
 }
 
+/**
+ * get permalink
+ */
 function showPermalink() {
    $p = new posts();
    echo "/" . $p->getPermaLink($_SESSION["id"]) . "/";
 }
 
+/**
+ * 
+ * @param type $hashtget link for tweeting the link to this post.
+ * @param string $hashtag hashtag to add to tweet
+ * @param string $url the base url to use
+ */
 function showTweet($hashtag, $url) {
    $p = new posts();
    if (substr($url, -1) != "/") {
@@ -98,4 +113,25 @@ function showTweet($hashtag, $url) {
    echo "https://twitter.com/intent/tweet?hashtags=$hashtag&text=$url" . $p->getPermaLink($_SESSION["id"]) . "/";
 }
 
+/**
+ * get date for post
+ */
+function showDate() {
+   $p = new posts();
+   $file = "";
+   if ($_SESSION["id"][0] == "!") {
+      $file = substr($_SESSION["id"],1);
+   } else {
+      $file = $p->list[$_SESSION["id"]];
+   }
+
+   $y = substr($file, 0, 4);
+   $m = substr($file, 5, 2);
+   $d = substr($file, 8, 2);
+   $H = substr($file, 11, 2);
+   $M = substr($file, 13, 2);
+   $S = substr($file, 15, 2);
+   
+   echo "$d.$m.$y";
+}
 ?>
