@@ -2,7 +2,7 @@
    session_start();
    
    // what kind of theme do you want ?
-   $_theme = "theme/minimal/";
+   $_theme = "theme/info/";
    
    require_once("libs/Parsedown.php");
    require_once("libs/posts.php");
